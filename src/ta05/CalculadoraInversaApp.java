@@ -2,6 +2,8 @@ package ta05;
 
 import java.util.Scanner;
 
+import javax.swing.JOptionPane;
+
 public class CalculadoraInversaApp {
 
 	public static void main(String[] args) {
@@ -20,25 +22,25 @@ public class CalculadoraInversaApp {
 
 		switch (operador) {
 		case '+':
-			System.out.println(num1 + num2);
+			JOptionPane.showMessageDialog(null, num1 + num2);
 			break;
 		case '-':
-			System.out.println(num1 - num2);
+			JOptionPane.showMessageDialog(null, num1 - num2);
 			break;
 		case '*':
-			System.out.println(num1 * num2);
+			JOptionPane.showMessageDialog(null, num1 * num2);
 			break;
 		case '/':
-			System.out.println(num1 / num2);
+			JOptionPane.showMessageDialog(null, num1 / num2);
 			break;
 		case '^':
-			System.out.println(Math.pow(num1, num2));
+			JOptionPane.showMessageDialog(null, Math.pow(num1, num2));
 			break;
 		case '%':
-			System.out.println(num1 % num2);
+			JOptionPane.showMessageDialog(null, num1 % num2);
 			break;
 		default:
-			System.out.println("operador no válido");
+			JOptionPane.showMessageDialog(null, "Operador no valido");
 			break;
 		}
 		scan.close();
